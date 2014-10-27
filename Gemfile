@@ -16,5 +16,5 @@ gem 'yajl-ruby', require: 'yajl'
 gem 'sqlite3'
 gem 'dm-sqlite-adapter'
 
-gem 'rspec', :require => 'spec'
+gem 'rspec'
 gem 'rack-test'
