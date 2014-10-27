@@ -24,7 +24,7 @@ post '/auth/signup' do
   user = User.create(:email => params[:email],
                      :password => params[:password],
                      :created_at => Time.now,
-                     :login_times => 0)
+                     :login_times => 1)
   session[:user_id] = user.id
   session[:authorized] = true		
 
