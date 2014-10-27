@@ -11,3 +11,7 @@ Works with Ruby 1.9.3.
 == Testing
 
   rake test
+
+== REST API
+
+/users GET, POST, DELETE
