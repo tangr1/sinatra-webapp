@@ -2,8 +2,7 @@ require "#{File.dirname(__FILE__)}/spec_helper"
 
 describe 'user' do
   before(:each) do
-    @user = User.new(:name => 'test_user',
-                     :email => 'test@email.com',
+    @user = User.new(:email => 'test@email.com',
                      :password => 'test_pasword')
   end
 

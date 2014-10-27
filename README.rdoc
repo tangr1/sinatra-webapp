@@ -14,4 +14,7 @@ Works with Ruby 1.9.3.
 
 == REST API
 
-/users GET, POST, DELETE
+  /users, GET, list users
+  /users/:id, GET,  get a user by id
+  /users, POST, add a user, the json could be {"email":"a@b.com", "password":"123"}
+  /users/:id, DELETE, delete a user by id

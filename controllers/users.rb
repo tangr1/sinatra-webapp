@@ -22,10 +22,10 @@ end
 post '/users' do
   parser = Yajl::Parser.new
   hash = parser.parse(request.body.read)
-  user = User.create(:name => hash['name'],
-              :email => hash['email'],
-              :password => hash['password'],
-              :created_at => Time.now)
+  user = User.create(:email => hash['email'],
+                     :password => hash['password'],
+                     :created_at => Time.now,
+                     :login_times => 0)
   Yajl::Encoder.encode(user)
 end
 
