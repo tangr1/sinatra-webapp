@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '1.9.3'
 
 gem 'rack', '1.5.2'
 gem 'unicorn'
@@ -12,17 +13,8 @@ gem 'dm-aggregates'
 gem 'dm-migrations'
 gem 'yajl-ruby', require: 'yajl'
 
-group :development do
-  gem 'sqlite3'   
-  gem 'dm-sqlite-adapter'
-end
+gem 'sqlite3'   
+gem 'dm-sqlite-adapter'
 
-group :test do
-  gem 'rspec', :require => 'spec'
-  gem 'rack-test'
-end
-
-group :production do
-  #gem 'dm-mysql-adapter'
-  #gem 'dm-postgres-adapter'
-end
+gem 'rspec', :require => 'spec'
+gem 'rack-test'
