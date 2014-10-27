@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test Web Application</title>
+    </head>
+    <body>
+        <section>
+            <h1>您已登录</h1>
+
+            <p><%= @user.email %>，谢谢你登录了我们网站！你已经登录了<%= @user.login_times %>次了。</p>
+
+            <p>
+            	<a href="/auth/logout" title="Logout">登出</a>
+            </p>
+        </section>
+    </body>
+</html>

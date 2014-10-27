@@ -1,0 +1,13 @@
+= Sinatra Web Application
+
+Works with Ruby 1.9.3.
+
+== Getting Started
+
+  bundle install
+  rake db:migrate
+  rake run
+
+== Testing
+
+  rake test
