@@ -13,7 +13,7 @@ gem 'dm-aggregates'
 gem 'dm-migrations'
 gem 'yajl-ruby', require: 'yajl'
 
-gem 'sqlite3'   
+gem 'sqlite3'
 gem 'dm-sqlite-adapter'
 
 gem 'rspec', :require => 'spec'
