@@ -1,1 +1,1 @@
-web: bundle exec rake -p $PORT
+web: bundle exec unicorn -p $PORT
